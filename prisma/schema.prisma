@@ -1,0 +1,33 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+//npx prisma migrate dev --name init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model anime {
+  id            Int       @id @default(autoincrement())
+  anime_id      Int       @unique
+  anime_name    String    @unique @db.VarChar(255)
+  anime_url     String    @db.VarChar(255)
+  anime_picture String    @db.VarChar(255)
+  start_date    DateTime
+  end_date      DateTime?
+  day           Day
+}
+
+enum Day {
+  MONDAY
+  TUESDAY
+  WEDNESDAY
+  THURSDAY
+  FRIDAY
+  SATURDAY
+  SUNDAY
+}
