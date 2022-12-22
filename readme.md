@@ -11,7 +11,7 @@ To get started with AnimeBot, you will need to have Node.js and npm installed on
 
 #### Clone the repository:
 Copy code
-git clone https://github.com/YOUR-USERNAME/AnimeBot
+git clone https://github.com/Exaustia/discord_bot_anime
 
 Install the dependencies:
 Copy code
