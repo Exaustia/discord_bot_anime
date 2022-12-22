@@ -14,10 +14,13 @@ Copy code
 git clone https://github.com/Exaustia/discord_bot_anime
 
 Install the dependencies:
-Copy code
+npm install 
+yarn install
+or pnpm install
 
-npm install
-Create a .env file and add your Discord bot token and Prisma database URL:
+Create a .env file and add your MAL_TOKEN token and the DATABASE_URL. 
+You need to create a config.json for the discord auth with "token", "clientId". 
+You can add a token for OpenIA to use the /ask "openAI" 
 
 
 #### Contributing
